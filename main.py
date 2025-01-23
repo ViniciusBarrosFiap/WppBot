@@ -30,16 +30,7 @@ nomes = [cell.value for cell in sheet['A'][1:]]  # Ignora o cabeçalho
 links = [cell.value for cell in sheet['B'][1:]]  # Ignora o cabeçalho
 
 mensagem_template = """
-Olá, aqui é a Contabilizei!\n
-O processo de abertura da sua empresa está começando e queremos que você se sinta seguro para iniciar sua jornada com a gente.\n
-Nossos especialistas estão trabalhando em todo o processo de cadastro, por isso é importante que você esteja atendo ao seu whatsapp e realize todo o seu cadastro com o apoio do time.\n
-Além disso, estamos te convidando para uma Reunião de Boas Vindas, onde vamos te contar rotinas importantes  para sua empresa:\n
-• Passos da abertura do seu CNPJ
-• Termos contábeis importantes
-• Organização do fluxo financeiro da sua empresa
-• Calendário Contábil\n
-Acesse o link para escolher o melhor horário:
-https://calendly.com/seja-bem-vindo/rotinas2?utm_source=wpp_manual&utm_campaign=basico
+
 """
 # Substituir as quebras de linha por '%0A' para serem interpretadas corretamente pelo WhatsApp Web
 mensagem_url = mensagem_template.replace("\n", "%0A")
